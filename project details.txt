@@ -1,0 +1,68 @@
+📌 Bulk Mail Automation Tool (Excel VBA + Java Outlook)
+
+This repository contains two independent bulk mail solutions:
+
+1️⃣ Excel VBA Bulk Mail Tool
+
+A simple macro-based solution inside Excel to send bulk emails directly.
+
+2️⃣ Java-Based Bulk Mail Tool
+
+An advanced automation tool built using Java that integrates with Microsoft Outlook for high-performance bulk mailing.
+
+🚀 Features
+🔹 Excel VBA Tool
+Send bulk emails directly from Excel
+Simple and quick setup
+Uses Excel macros (.xlsm)
+Ideal for small-scale mailing
+🔹 Java Bulk Mail Tool
+Send bulk emails via Microsoft Outlook
+Read structured data from Excel
+Dynamic email generation:
+Body from template
+Signature with logos
+Auto-generated tables (GST data)
+Supports:
+Attachments
+Filtering logic
+Multi-threaded processing ⚡
+More powerful and scalable than VBA
+📂 Project Structure
+bulkmail/
+│
+├── Excel-VBA/          → Excel file with macro-based bulk mail
+├── Java-App/           → Java source code
+├── target/             → Compiled JAR
+├── lib/                → Required libraries (Jacob)
+├── resources/          → Logos for signature
+├── BulkMail.exe             → Run Java tool easily
+└── README.md
+▶️ How to Use
+🟢 Excel VBA Tool
+Open the .xlsm file
+Enable macros
+Click Send Mail button
+🔵 Java Tool
+Option 1: Double Click
+Run BulkMail.exe
+Option 2: Command Line
+cd target
+java -Djava.library.path=../lib -jar bulkmail-1.0-SNAPSHOT.jar
+📋 Requirements
+Windows OS
+Microsoft Outlook (installed & logged in)
+Java 17+ (for Java tool)
+Excel (for VBA tool)
+⚠️ Notes
+VBA and Java tools are completely independent
+Do NOT delete lib folder (required for Outlook integration)
+Ensure Excel column names match required format
+Logos should be properly configured for email signature
+🛠 Tech Stack
+Excel VBA (basic automation)
+Java + Apache POI (Excel processing)
+Jacob Library (Outlook integration)
+👤 Author
+
+Huzaifa Shaikh
